@@ -49,6 +49,27 @@
             this.txtDescricaoC = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView1_MostrarAtracao = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Horário = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.textBox1_inseriPreçoAtracao = new System.Windows.Forms.TextBox();
+            this.comboBox1_precoatracao = new System.Windows.Forms.ComboBox();
+            this.btn_excluirAtracao = new System.Windows.Forms.Button();
+            this.btn_editarAtracao = new System.Windows.Forms.Button();
+            this.textBox1_addAtracao = new System.Windows.Forms.TextBox();
+            this.txt_HorarioAtracao = new System.Windows.Forms.TextBox();
+            this.btn_adicionarAtracao = new System.Windows.Forms.Button();
+            this.comboBox3_chosseAtracao = new System.Windows.Forms.ComboBox();
+            this.textBox2_descricaoAtracao = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.cmbBox_OpcaoAtracao = new System.Windows.Forms.ComboBox();
             this.tbpEstoque = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -84,24 +105,6 @@
             this.cbxUser = new System.Windows.Forms.ComboBox();
             this.tbpEstabelecimento = new System.Windows.Forms.TabPage();
             this.gbxEstabelecimento = new System.Windows.Forms.GroupBox();
-            this.lblCNPJ = new System.Windows.Forms.Label();
-            this.lblNomE = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lblBairro = new System.Windows.Forms.Label();
-            this.lblCEP = new System.Windows.Forms.Label();
-            this.lblNumero = new System.Windows.Forms.Label();
-            this.lblRua = new System.Windows.Forms.Label();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.cbxOpcoesE = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblEncerramentoDom = new System.Windows.Forms.Label();
@@ -153,20 +156,41 @@
             this.lblAberturaQui = new System.Windows.Forms.Label();
             this.ckbFechadoQui = new System.Windows.Forms.CheckBox();
             this.txtAberturaQui = new System.Windows.Forms.TextBox();
+            this.lblCNPJ = new System.Windows.Forms.Label();
+            this.lblNomE = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.lblCEP = new System.Windows.Forms.Label();
+            this.lblNumero = new System.Windows.Forms.Label();
+            this.lblRua = new System.Windows.Forms.Label();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblCidade = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cbxOpcoesE = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tbpCardapio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutoP)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_MostrarAtracao)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.tbpEstoque.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.tbpVenda.SuspendLayout();
             this.tbpEstabelecimento.SuspendLayout();
             this.gbxEstabelecimento.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -387,6 +411,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.dataGridView1_MostrarAtracao);
+            this.tabPage2.Controls.Add(this.label27);
+            this.tabPage2.Controls.Add(this.label25);
+            this.tabPage2.Controls.Add(this.label24);
+            this.tabPage2.Controls.Add(this.groupBox6);
+            this.tabPage2.Controls.Add(this.cmbBox_OpcaoAtracao);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -394,6 +424,212 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "ATRAÇÕES";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1_MostrarAtracao
+            // 
+            this.dataGridView1_MostrarAtracao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1_MostrarAtracao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.Horário});
+            this.dataGridView1_MostrarAtracao.Location = new System.Drawing.Point(6, 144);
+            this.dataGridView1_MostrarAtracao.Name = "dataGridView1_MostrarAtracao";
+            this.dataGridView1_MostrarAtracao.Size = new System.Drawing.Size(756, 242);
+            this.dataGridView1_MostrarAtracao.TabIndex = 12;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.Width = 178;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Descrição";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Preço";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // Horário
+            // 
+            this.Horário.HeaderText = "Horário";
+            this.Horário.Name = "Horário";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(623, 38);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(55, 16);
+            this.label27.TabIndex = 10;
+            this.label27.Text = "Horário";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(506, 38);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(45, 16);
+            this.label25.TabIndex = 7;
+            this.label25.Text = "Preço";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(212, 38);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(70, 16);
+            this.label24.TabIndex = 5;
+            this.label24.Text = "Descrição";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.textBox1_inseriPreçoAtracao);
+            this.groupBox6.Controls.Add(this.comboBox1_precoatracao);
+            this.groupBox6.Controls.Add(this.btn_excluirAtracao);
+            this.groupBox6.Controls.Add(this.btn_editarAtracao);
+            this.groupBox6.Controls.Add(this.textBox1_addAtracao);
+            this.groupBox6.Controls.Add(this.txt_HorarioAtracao);
+            this.groupBox6.Controls.Add(this.btn_adicionarAtracao);
+            this.groupBox6.Controls.Add(this.comboBox3_chosseAtracao);
+            this.groupBox6.Controls.Add(this.textBox2_descricaoAtracao);
+            this.groupBox6.Controls.Add(this.textBox3);
+            this.groupBox6.Location = new System.Drawing.Point(6, 38);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(756, 89);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Nome";
+            // 
+            // textBox1_inseriPreçoAtracao
+            // 
+            this.textBox1_inseriPreçoAtracao.Location = new System.Drawing.Point(503, 25);
+            this.textBox1_inseriPreçoAtracao.Name = "textBox1_inseriPreçoAtracao";
+            this.textBox1_inseriPreçoAtracao.Size = new System.Drawing.Size(108, 22);
+            this.textBox1_inseriPreçoAtracao.TabIndex = 15;
+            // 
+            // comboBox1_precoatracao
+            // 
+            this.comboBox1_precoatracao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1_precoatracao.FormattingEnabled = true;
+            this.comboBox1_precoatracao.Items.AddRange(new object[] {
+            "Ingresso",
+            "Taxa 10% Cover",
+            "Grátis"});
+            this.comboBox1_precoatracao.Location = new System.Drawing.Point(503, 23);
+            this.comboBox1_precoatracao.Name = "comboBox1_precoatracao";
+            this.comboBox1_precoatracao.Size = new System.Drawing.Size(108, 24);
+            this.comboBox1_precoatracao.TabIndex = 14;
+            // 
+            // btn_excluirAtracao
+            // 
+            this.btn_excluirAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_excluirAtracao.Location = new System.Drawing.Point(648, 57);
+            this.btn_excluirAtracao.Name = "btn_excluirAtracao";
+            this.btn_excluirAtracao.Size = new System.Drawing.Size(108, 32);
+            this.btn_excluirAtracao.TabIndex = 13;
+            this.btn_excluirAtracao.Text = "EXCLUIR";
+            this.btn_excluirAtracao.UseVisualStyleBackColor = true;
+            this.btn_excluirAtracao.Click += new System.EventHandler(this.btn_excluirAtracao_Click);
+            // 
+            // btn_editarAtracao
+            // 
+            this.btn_editarAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_editarAtracao.Location = new System.Drawing.Point(651, 57);
+            this.btn_editarAtracao.Name = "btn_editarAtracao";
+            this.btn_editarAtracao.Size = new System.Drawing.Size(108, 32);
+            this.btn_editarAtracao.TabIndex = 12;
+            this.btn_editarAtracao.Text = "EDITAR";
+            this.btn_editarAtracao.UseVisualStyleBackColor = true;
+            this.btn_editarAtracao.Click += new System.EventHandler(this.btn_editarAtracao_Click);
+            // 
+            // textBox1_addAtracao
+            // 
+            this.textBox1_addAtracao.AutoCompleteCustomSource.AddRange(new string[] {
+            "Musical",
+            "Comédia/Stand Up",
+            "Teatral"});
+            this.textBox1_addAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1_addAtracao.Location = new System.Drawing.Point(6, 21);
+            this.textBox1_addAtracao.Name = "textBox1_addAtracao";
+            this.textBox1_addAtracao.Size = new System.Drawing.Size(188, 25);
+            this.textBox1_addAtracao.TabIndex = 1;
+            this.textBox1_addAtracao.Visible = false;
+            // 
+            // txt_HorarioAtracao
+            // 
+            this.txt_HorarioAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_HorarioAtracao.Location = new System.Drawing.Point(620, 23);
+            this.txt_HorarioAtracao.Name = "txt_HorarioAtracao";
+            this.txt_HorarioAtracao.Size = new System.Drawing.Size(136, 25);
+            this.txt_HorarioAtracao.TabIndex = 11;
+            // 
+            // btn_adicionarAtracao
+            // 
+            this.btn_adicionarAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_adicionarAtracao.Location = new System.Drawing.Point(648, 57);
+            this.btn_adicionarAtracao.Name = "btn_adicionarAtracao";
+            this.btn_adicionarAtracao.Size = new System.Drawing.Size(108, 32);
+            this.btn_adicionarAtracao.TabIndex = 9;
+            this.btn_adicionarAtracao.Text = "ADICIONAR";
+            this.btn_adicionarAtracao.UseVisualStyleBackColor = true;
+            this.btn_adicionarAtracao.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comboBox3_chosseAtracao
+            // 
+            this.comboBox3_chosseAtracao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3_chosseAtracao.FormattingEnabled = true;
+            this.comboBox3_chosseAtracao.Items.AddRange(new object[] {
+            "Musical",
+            "Comédia",
+            "Teatral"});
+            this.comboBox3_chosseAtracao.Location = new System.Drawing.Point(6, 22);
+            this.comboBox3_chosseAtracao.Name = "comboBox3_chosseAtracao";
+            this.comboBox3_chosseAtracao.Size = new System.Drawing.Size(188, 24);
+            this.comboBox3_chosseAtracao.TabIndex = 0;
+            // 
+            // textBox2_descricaoAtracao
+            // 
+            this.textBox2_descricaoAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2_descricaoAtracao.Location = new System.Drawing.Point(209, 23);
+            this.textBox2_descricaoAtracao.Name = "textBox2_descricaoAtracao";
+            this.textBox2_descricaoAtracao.Size = new System.Drawing.Size(285, 25);
+            this.textBox2_descricaoAtracao.TabIndex = 6;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(503, 23);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(108, 25);
+            this.textBox3.TabIndex = 8;
+            // 
+            // cmbBox_OpcaoAtracao
+            // 
+            this.cmbBox_OpcaoAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbBox_OpcaoAtracao.FormattingEnabled = true;
+            this.cmbBox_OpcaoAtracao.Items.AddRange(new object[] {
+            "ADICIONAR ATRAÇÕES",
+            "EDITAR ATRAÇÕES",
+            "EXCLUIR ATRAÇÕES"});
+            this.cmbBox_OpcaoAtracao.Location = new System.Drawing.Point(6, 6);
+            this.cmbBox_OpcaoAtracao.Name = "cmbBox_OpcaoAtracao";
+            this.cmbBox_OpcaoAtracao.Size = new System.Drawing.Size(212, 26);
+            this.cmbBox_OpcaoAtracao.TabIndex = 3;
+            this.cmbBox_OpcaoAtracao.Text = "ADICIONAR ATRAÇÕES";
             // 
             // tbpEstoque
             // 
@@ -785,193 +1021,6 @@
             this.gbxEstabelecimento.TabIndex = 4;
             this.gbxEstabelecimento.TabStop = false;
             this.gbxEstabelecimento.Text = "Estabelecimento ";
-            // 
-            // lblCNPJ
-            // 
-            this.lblCNPJ.AutoSize = true;
-            this.lblCNPJ.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCNPJ.Location = new System.Drawing.Point(7, 106);
-            this.lblCNPJ.Name = "lblCNPJ";
-            this.lblCNPJ.Size = new System.Drawing.Size(60, 17);
-            this.lblCNPJ.TabIndex = 7;
-            this.lblCNPJ.Text = "lblCNPJ";
-            // 
-            // lblNomE
-            // 
-            this.lblNomE.AutoSize = true;
-            this.lblNomE.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomE.Location = new System.Drawing.Point(7, 54);
-            this.lblNomE.Name = "lblNomE";
-            this.lblNomE.Size = new System.Drawing.Size(63, 17);
-            this.lblNomE.TabIndex = 6;
-            this.lblNomE.Text = "lblNomE";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.lblBairro);
-            this.groupBox3.Controls.Add(this.lblCEP);
-            this.groupBox3.Controls.Add(this.lblNumero);
-            this.groupBox3.Controls.Add(this.lblRua);
-            this.groupBox3.Controls.Add(this.lblEstado);
-            this.groupBox3.Controls.Add(this.lblCidade);
-            this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Location = new System.Drawing.Point(10, 133);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(379, 182);
-            this.groupBox3.TabIndex = 4;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Endereço";
-            // 
-            // lblBairro
-            // 
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(7, 148);
-            this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(61, 17);
-            this.lblBairro.TabIndex = 17;
-            this.lblBairro.Text = "lblBairro";
-            // 
-            // lblCEP
-            // 
-            this.lblCEP.AutoSize = true;
-            this.lblCEP.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCEP.Location = new System.Drawing.Point(242, 148);
-            this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(53, 17);
-            this.lblCEP.TabIndex = 16;
-            this.lblCEP.Text = "lblCEP";
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(242, 96);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(74, 17);
-            this.lblNumero.TabIndex = 15;
-            this.lblNumero.Text = "lblNumero";
-            // 
-            // lblRua
-            // 
-            this.lblRua.AutoSize = true;
-            this.lblRua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRua.Location = new System.Drawing.Point(7, 96);
-            this.lblRua.Name = "lblRua";
-            this.lblRua.Size = new System.Drawing.Size(49, 17);
-            this.lblRua.TabIndex = 14;
-            this.lblRua.Text = "lblRua";
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(242, 44);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(73, 18);
-            this.lblEstado.TabIndex = 13;
-            this.lblEstado.Text = "lblEstado";
-            // 
-            // lblCidade
-            // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(7, 45);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(68, 17);
-            this.lblCidade.TabIndex = 12;
-            this.lblCidade.Text = "lblCidade";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(242, 125);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 16);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "CEP";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 125);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 16);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Bairro";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(242, 74);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 16);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Numero";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 74);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Rua";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(242, 22);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 16);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Estado";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 22);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 16);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Cidade ";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(7, 83);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(42, 16);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "CNPJ";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 32);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(113, 16);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Estabelecimento";
-            // 
-            // cbxOpcoesE
-            // 
-            this.cbxOpcoesE.FormattingEnabled = true;
-            this.cbxOpcoesE.Items.AddRange(new object[] {
-            "VISUALIZAR INFORMAÇÕES",
-            "EDITAR INFORMAÇÕES",
-            "ADICIONAR NOVO LOGIN"});
-            this.cbxOpcoesE.Location = new System.Drawing.Point(8, 8);
-            this.cbxOpcoesE.Name = "cbxOpcoesE";
-            this.cbxOpcoesE.Size = new System.Drawing.Size(201, 24);
-            this.cbxOpcoesE.TabIndex = 1;
-            this.cbxOpcoesE.Text = "VISUALIZAR INFORMAÇÕES";
-            this.cbxOpcoesE.SelectedIndexChanged += new System.EventHandler(this.cbxOpcoesE_SelectedIndexChanged);
             // 
             // groupBox2
             // 
@@ -1470,6 +1519,193 @@
             this.txtAberturaQui.Size = new System.Drawing.Size(100, 22);
             this.txtAberturaQui.TabIndex = 29;
             // 
+            // lblCNPJ
+            // 
+            this.lblCNPJ.AutoSize = true;
+            this.lblCNPJ.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCNPJ.Location = new System.Drawing.Point(7, 106);
+            this.lblCNPJ.Name = "lblCNPJ";
+            this.lblCNPJ.Size = new System.Drawing.Size(60, 17);
+            this.lblCNPJ.TabIndex = 7;
+            this.lblCNPJ.Text = "lblCNPJ";
+            // 
+            // lblNomE
+            // 
+            this.lblNomE.AutoSize = true;
+            this.lblNomE.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomE.Location = new System.Drawing.Point(7, 54);
+            this.lblNomE.Name = "lblNomE";
+            this.lblNomE.Size = new System.Drawing.Size(63, 17);
+            this.lblNomE.TabIndex = 6;
+            this.lblNomE.Text = "lblNomE";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.lblBairro);
+            this.groupBox3.Controls.Add(this.lblCEP);
+            this.groupBox3.Controls.Add(this.lblNumero);
+            this.groupBox3.Controls.Add(this.lblRua);
+            this.groupBox3.Controls.Add(this.lblEstado);
+            this.groupBox3.Controls.Add(this.lblCidade);
+            this.groupBox3.Controls.Add(this.label8);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Controls.Add(this.label6);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Location = new System.Drawing.Point(10, 133);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(379, 182);
+            this.groupBox3.TabIndex = 4;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Endereço";
+            // 
+            // lblBairro
+            // 
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Location = new System.Drawing.Point(7, 148);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(61, 17);
+            this.lblBairro.TabIndex = 17;
+            this.lblBairro.Text = "lblBairro";
+            // 
+            // lblCEP
+            // 
+            this.lblCEP.AutoSize = true;
+            this.lblCEP.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.Location = new System.Drawing.Point(242, 148);
+            this.lblCEP.Name = "lblCEP";
+            this.lblCEP.Size = new System.Drawing.Size(53, 17);
+            this.lblCEP.TabIndex = 16;
+            this.lblCEP.Text = "lblCEP";
+            // 
+            // lblNumero
+            // 
+            this.lblNumero.AutoSize = true;
+            this.lblNumero.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumero.Location = new System.Drawing.Point(242, 96);
+            this.lblNumero.Name = "lblNumero";
+            this.lblNumero.Size = new System.Drawing.Size(74, 17);
+            this.lblNumero.TabIndex = 15;
+            this.lblNumero.Text = "lblNumero";
+            // 
+            // lblRua
+            // 
+            this.lblRua.AutoSize = true;
+            this.lblRua.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRua.Location = new System.Drawing.Point(7, 96);
+            this.lblRua.Name = "lblRua";
+            this.lblRua.Size = new System.Drawing.Size(49, 17);
+            this.lblRua.TabIndex = 14;
+            this.lblRua.Text = "lblRua";
+            // 
+            // lblEstado
+            // 
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(242, 44);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(73, 18);
+            this.lblEstado.TabIndex = 13;
+            this.lblEstado.Text = "lblEstado";
+            // 
+            // lblCidade
+            // 
+            this.lblCidade.AutoSize = true;
+            this.lblCidade.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Location = new System.Drawing.Point(7, 45);
+            this.lblCidade.Name = "lblCidade";
+            this.lblCidade.Size = new System.Drawing.Size(68, 17);
+            this.lblCidade.TabIndex = 12;
+            this.lblCidade.Text = "lblCidade";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(242, 125);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 16);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "CEP";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 125);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 16);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Bairro";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(242, 74);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 16);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Numero";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Rua";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(242, 22);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 16);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Estado";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 22);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 16);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Cidade ";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(7, 83);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 16);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "CNPJ";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 32);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(113, 16);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Estabelecimento";
+            // 
+            // cbxOpcoesE
+            // 
+            this.cbxOpcoesE.FormattingEnabled = true;
+            this.cbxOpcoesE.Items.AddRange(new object[] {
+            "VISUALIZAR INFORMAÇÕES",
+            "EDITAR INFORMAÇÕES",
+            "ADICIONAR NOVO LOGIN"});
+            this.cbxOpcoesE.Location = new System.Drawing.Point(8, 8);
+            this.cbxOpcoesE.Name = "cbxOpcoesE";
+            this.cbxOpcoesE.Size = new System.Drawing.Size(201, 24);
+            this.cbxOpcoesE.TabIndex = 1;
+            this.cbxOpcoesE.Text = "VISUALIZAR INFORMAÇÕES";
+            this.cbxOpcoesE.SelectedIndexChanged += new System.EventHandler(this.cbxOpcoesE_SelectedIndexChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1489,6 +1725,11 @@
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1_MostrarAtracao)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
             this.tbpEstoque.ResumeLayout(false);
             this.tbpEstoque.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -1499,11 +1740,11 @@
             this.tbpEstabelecimento.ResumeLayout(false);
             this.gbxEstabelecimento.ResumeLayout(false);
             this.gbxEstabelecimento.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1634,6 +1875,27 @@
         private System.Windows.Forms.Label lblAberturaQui;
         private System.Windows.Forms.CheckBox ckbFechadoQui;
         private System.Windows.Forms.TextBox txtAberturaQui;
+        private System.Windows.Forms.DataGridView dataGridView1_MostrarAtracao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Horário;
+        private System.Windows.Forms.TextBox txt_HorarioAtracao;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button btn_adicionarAtracao;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox textBox2_descricaoAtracao;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.ComboBox comboBox3_chosseAtracao;
+        private System.Windows.Forms.ComboBox cmbBox_OpcaoAtracao;
+        private System.Windows.Forms.TextBox textBox1_addAtracao;
+        private System.Windows.Forms.ComboBox comboBox1_precoatracao;
+        private System.Windows.Forms.Button btn_excluirAtracao;
+        private System.Windows.Forms.Button btn_editarAtracao;
+        private System.Windows.Forms.TextBox textBox1_inseriPreçoAtracao;
     }
 }
 

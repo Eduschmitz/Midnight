@@ -25,3 +25,17 @@ C:\Users\eduar\OneDrive\Documentos\GitHub\Midnight\obj\Debug\Midnight.csproj.Cor
 C:\Users\eduar\OneDrive\Documentos\GitHub\Midnight\obj\Debug\Midnight.exe
 C:\Users\eduar\OneDrive\Documentos\GitHub\Midnight\obj\Debug\Midnight.pdb
 C:\Users\eduar\OneDrive\Documentos\GitHub\Midnight\obj\Debug\Midnight.AddLogin.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.csprojAssemblyReference.cache
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.AddLogin.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.EditEForm.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.EditPForm.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.LoginForm.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.MainForm.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.Properties.Resources.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.csproj.GenerateResource.cache
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.csproj.CoreCompileInputs.cache
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.exe
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.pdb
+C:\Users\edusc\Documents\GitHub\Midnight\bin\Debug\Midnight.exe.config
+C:\Users\edusc\Documents\GitHub\Midnight\bin\Debug\Midnight.exe
+C:\Users\edusc\Documents\GitHub\Midnight\bin\Debug\Midnight.pdb

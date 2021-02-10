@@ -141,14 +141,18 @@ namespace Midnight
             txtQuantidadeV.Text = "";
             txtPrecoV.Text = "";
         }
-
+        /// <summary>
+        /// /Duda não está funcionando
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         //altera entre visualizar e alterar horario de funcionamento
         //(tbpEstabelecimento)
-        private void btnAlteraH_Click(object sender, EventArgs e)
-        {
-            gbxAlteraH.Visible = true;
-            gbxVizualizaH.Visible = false;
-        }
+        //private void btnAlteraH_Click(object sender, EventArgs e)
+        //{
+        //    gbxAlteraH.Visible = true;
+        //    gbxVizualizaH.Visible = false;
+        //}
 
         //atualiza as informacoes de horario de funcionamento
         //retorna a tela de visualizar informações
@@ -201,6 +205,31 @@ namespace Midnight
             txtAberturaSeg.Visible = true;
             lblEncerramentoSeg.Visible = true;
             txtEncerramentoSeg.Visible = true;
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_excluirAtracao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_editarAtracao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
