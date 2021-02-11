@@ -46,69 +46,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddLogin.cs">
+    <Compile Include="View\AddLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddLogin.Designer.cs">
+    <Compile Include="View\AddLogin.Designer.cs">
       <DependentUpon>AddLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditarAtracao.cs">
+    <Compile Include="View\EditarAtracao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditarAtracao.Designer.cs">
+    <Compile Include="View\EditarAtracao.Designer.cs">
       <DependentUpon>EditarAtracao.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditEForm.cs">
+    <Compile Include="View\EditEForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditEForm.Designer.cs">
+    <Compile Include="View\EditEForm.Designer.cs">
       <DependentUpon>EditEForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EditPForm.cs">
+    <Compile Include="View\EditPForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditPForm.Designer.cs">
+    <Compile Include="View\EditPForm.Designer.cs">
       <DependentUpon>EditPForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ExcluirAtracao.cs">
+    <Compile Include="View\ExcluirAtracao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ExcluirAtracao.Designer.cs">
+    <Compile Include="View\ExcluirAtracao.Designer.cs">
       <DependentUpon>ExcluirAtracao.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginForm.cs">
+    <Compile Include="View\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginForm.Designer.cs">
+    <Compile Include="View\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="View\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="View\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="View\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddLogin.resx">
+    <EmbeddedResource Include="View\AddLogin.resx">
       <DependentUpon>AddLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditarAtracao.resx">
+    <EmbeddedResource Include="View\EditarAtracao.resx">
       <DependentUpon>EditarAtracao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditEForm.resx">
+    <EmbeddedResource Include="View\EditEForm.resx">
       <DependentUpon>EditEForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditPForm.resx">
+    <EmbeddedResource Include="View\EditPForm.resx">
       <DependentUpon>EditPForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ExcluirAtracao.resx">
+    <EmbeddedResource Include="View\ExcluirAtracao.resx">
       <DependentUpon>ExcluirAtracao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginForm.resx">
+    <EmbeddedResource Include="View\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -131,10 +131,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="View\App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Logo.ico" />
+    <Content Include="View\Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Control\" />
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,21 +29,19 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.cmb_IdEscolha = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.txt_ExcluiHoraAtracao = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txt_ExcluiDescricaoAtracao = new System.Windows.Forms.TextBox();
             this.btnExcluirAtracao = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txt_excluiAtracaoNome = new System.Windows.Forms.TextBox();
             this.dataGridView1_ExclirMostrarAtracao = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Horário = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txt_excluiAtracaoNome = new System.Windows.Forms.TextBox();
-            this.txt_ExcluiDescricaoAtracao = new System.Windows.Forms.TextBox();
-            this.txt_ExcluiHoraAtracao = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -53,25 +51,14 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.cmb_IdEscolha);
             this.panel1.Controls.Add(this.groupBox4);
             this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnExcluirAtracao);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(768, 97);
             this.panel1.TabIndex = 23;
-            // 
-            // cmb_IdEscolha
-            // 
-            this.cmb_IdEscolha.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmb_IdEscolha.FormattingEnabled = true;
-            this.cmb_IdEscolha.Location = new System.Drawing.Point(3, 27);
-            this.cmb_IdEscolha.Name = "cmb_IdEscolha";
-            this.cmb_IdEscolha.Size = new System.Drawing.Size(58, 24);
-            this.cmb_IdEscolha.TabIndex = 12;
             // 
             // groupBox4
             // 
@@ -84,6 +71,14 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Horario";
             // 
+            // txt_ExcluiHoraAtracao
+            // 
+            this.txt_ExcluiHoraAtracao.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ExcluiHoraAtracao.Location = new System.Drawing.Point(15, 24);
+            this.txt_ExcluiHoraAtracao.Name = "txt_ExcluiHoraAtracao";
+            this.txt_ExcluiHoraAtracao.Size = new System.Drawing.Size(79, 23);
+            this.txt_ExcluiHoraAtracao.TabIndex = 12;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txt_ExcluiDescricaoAtracao);
@@ -95,15 +90,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Descrição";
             // 
-            // label3
+            // txt_ExcluiDescricaoAtracao
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(5, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(21, 16);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "ID";
+            this.txt_ExcluiDescricaoAtracao.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ExcluiDescricaoAtracao.Location = new System.Drawing.Point(6, 26);
+            this.txt_ExcluiDescricaoAtracao.Name = "txt_ExcluiDescricaoAtracao";
+            this.txt_ExcluiDescricaoAtracao.Size = new System.Drawing.Size(350, 23);
+            this.txt_ExcluiDescricaoAtracao.TabIndex = 12;
             // 
             // btnExcluirAtracao
             // 
@@ -120,12 +113,21 @@
             // 
             this.groupBox1.Controls.Add(this.txt_excluiAtracaoNome);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(67, 3);
+            this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(203, 53);
+            this.groupBox1.Size = new System.Drawing.Size(267, 53);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nome";
+            // 
+            // txt_excluiAtracaoNome
+            // 
+            this.txt_excluiAtracaoNome.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_excluiAtracaoNome.Location = new System.Drawing.Point(6, 26);
+            this.txt_excluiAtracaoNome.Name = "txt_excluiAtracaoNome";
+            this.txt_excluiAtracaoNome.Size = new System.Drawing.Size(255, 23);
+            this.txt_excluiAtracaoNome.TabIndex = 12;
+            this.txt_excluiAtracaoNome.TextChanged += new System.EventHandler(this.txt_excluiAtracaoNome_TextChanged);
             // 
             // dataGridView1_ExclirMostrarAtracao
             // 
@@ -170,31 +172,6 @@
             this.Horário.HeaderText = "Horário";
             this.Horário.Name = "Horário";
             // 
-            // txt_excluiAtracaoNome
-            // 
-            this.txt_excluiAtracaoNome.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_excluiAtracaoNome.Location = new System.Drawing.Point(6, 26);
-            this.txt_excluiAtracaoNome.Name = "txt_excluiAtracaoNome";
-            this.txt_excluiAtracaoNome.Size = new System.Drawing.Size(191, 23);
-            this.txt_excluiAtracaoNome.TabIndex = 12;
-            this.txt_excluiAtracaoNome.TextChanged += new System.EventHandler(this.txt_excluiAtracaoNome_TextChanged);
-            // 
-            // txt_ExcluiDescricaoAtracao
-            // 
-            this.txt_ExcluiDescricaoAtracao.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ExcluiDescricaoAtracao.Location = new System.Drawing.Point(6, 26);
-            this.txt_ExcluiDescricaoAtracao.Name = "txt_ExcluiDescricaoAtracao";
-            this.txt_ExcluiDescricaoAtracao.Size = new System.Drawing.Size(350, 23);
-            this.txt_ExcluiDescricaoAtracao.TabIndex = 12;
-            // 
-            // txt_ExcluiHoraAtracao
-            // 
-            this.txt_ExcluiHoraAtracao.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ExcluiHoraAtracao.Location = new System.Drawing.Point(15, 24);
-            this.txt_ExcluiHoraAtracao.Name = "txt_ExcluiHoraAtracao";
-            this.txt_ExcluiHoraAtracao.Size = new System.Drawing.Size(79, 23);
-            this.txt_ExcluiHoraAtracao.TabIndex = 12;
-            // 
             // ExcluirAtracao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -205,7 +182,6 @@
             this.Name = "ExcluirAtracao";
             this.Text = "ExcluirAtracao";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -220,10 +196,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.ComboBox cmb_IdEscolha;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnExcluirAtracao;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dataGridView1_ExclirMostrarAtracao;
