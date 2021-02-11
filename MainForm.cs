@@ -119,8 +119,6 @@ namespace Midnight
             txtProdutoC.Visible = false;
             ckbAdicionarProdP.Visible = true;
             ckbSelecionarProdP.Visible = false;
-
-
         }
 
         //faz o controle da lista de itens durante a realização de uma venda
@@ -217,18 +215,54 @@ namespace Midnight
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)// Adicionar atração
+        {
+            txtBox_addAtracao.Visible = true;
+            txtBox_descricaoAtracao.Visible = true;
+            txtBox_inseriPreçoAtracao.Visible = true;
+            txtbox_InserirHorario.Visible = true;
+            txtBox_addAtracao.Text = "";
+            txtBox_descricaoAtracao.Text = "";
+            txtBox_inseriPreçoAtracao.Text = "";
+            txtbox_InserirHorario.Text = "";
+            MessageBox.Show("Atração Cadastrado com sucesso");
+        }
+
+        private void textBox1_addAtracao_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_excluirAtracao_Click(object sender, EventArgs e)
+        private void cmbBox_OpcaoAtracao_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cmbBox_OpcaoAtracao.SelectedIndex == 0)// vazio
+            {
+                MessageBox.Show("Escolha uma opção");                
+            }
+            else if (cmbBox_OpcaoAtracao.SelectedIndex == 1)// adicionar
+            {
+                txtBox_addAtracao.Visible = true;
+                txtBox_descricaoAtracao.Visible = true;
+                txtBox_inseriPreçoAtracao.Visible = true;
+                txtbox_InserirHorario.Visible = true;
+                MessageBox.Show("Atração Cadastrado com sucesso");
+            }
+            else if (cmbBox_OpcaoAtracao.SelectedIndex == 2) // editar
+            {
+                Form f1 = FindForm();
+                EditarAtracao f2 = new EditarAtracao();
+                f2.Show();
+                f1.Hide();
+            }
+            else if (cmbBox_OpcaoAtracao.SelectedIndex == 3)// excluir
+            {
+                Form f1 = FindForm();
+                ExcluirAtracao f2 = new ExcluirAtracao();
+                f2.Show();
+                f1.Hide();
+            }
 
-        }
 
-        private void btn_editarAtracao_Click(object sender, EventArgs e)
-        {
 
         }
     }

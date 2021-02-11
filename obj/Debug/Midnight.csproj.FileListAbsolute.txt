@@ -39,3 +39,5 @@ C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.pdb
 C:\Users\edusc\Documents\GitHub\Midnight\bin\Debug\Midnight.exe.config
 C:\Users\edusc\Documents\GitHub\Midnight\bin\Debug\Midnight.exe
 C:\Users\edusc\Documents\GitHub\Midnight\bin\Debug\Midnight.pdb
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.EditarAtracao.resources
+C:\Users\edusc\Documents\GitHub\Midnight\obj\Debug\Midnight.ExcluirAtracao.resources

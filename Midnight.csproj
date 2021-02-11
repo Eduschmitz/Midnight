@@ -52,6 +52,12 @@
     <Compile Include="AddLogin.Designer.cs">
       <DependentUpon>AddLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarAtracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarAtracao.Designer.cs">
+      <DependentUpon>EditarAtracao.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditEForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,12 @@
     </Compile>
     <Compile Include="EditPForm.Designer.cs">
       <DependentUpon>EditPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirAtracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirAtracao.Designer.cs">
+      <DependentUpon>ExcluirAtracao.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -81,11 +93,17 @@
     <EmbeddedResource Include="AddLogin.resx">
       <DependentUpon>AddLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarAtracao.resx">
+      <DependentUpon>EditarAtracao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditEForm.resx">
       <DependentUpon>EditEForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditPForm.resx">
       <DependentUpon>EditPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirAtracao.resx">
+      <DependentUpon>ExcluirAtracao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

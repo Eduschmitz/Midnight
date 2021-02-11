@@ -59,16 +59,11 @@
             this.label25 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.textBox1_inseriPreçoAtracao = new System.Windows.Forms.TextBox();
-            this.comboBox1_precoatracao = new System.Windows.Forms.ComboBox();
-            this.btn_excluirAtracao = new System.Windows.Forms.Button();
-            this.btn_editarAtracao = new System.Windows.Forms.Button();
-            this.textBox1_addAtracao = new System.Windows.Forms.TextBox();
-            this.txt_HorarioAtracao = new System.Windows.Forms.TextBox();
-            this.btn_adicionarAtracao = new System.Windows.Forms.Button();
-            this.comboBox3_chosseAtracao = new System.Windows.Forms.ComboBox();
-            this.textBox2_descricaoAtracao = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtbox_InserirHorario = new System.Windows.Forms.TextBox();
+            this.txtBox_inseriPreçoAtracao = new System.Windows.Forms.TextBox();
+            this.txtBox_addAtracao = new System.Windows.Forms.TextBox();
+            this.btn_AddAtracao = new System.Windows.Forms.Button();
+            this.txtBox_descricaoAtracao = new System.Windows.Forms.TextBox();
             this.cmbBox_OpcaoAtracao = new System.Windows.Forms.ComboBox();
             this.tbpEstoque = new System.Windows.Forms.TabPage();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -497,16 +492,11 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.textBox1_inseriPreçoAtracao);
-            this.groupBox6.Controls.Add(this.comboBox1_precoatracao);
-            this.groupBox6.Controls.Add(this.btn_excluirAtracao);
-            this.groupBox6.Controls.Add(this.btn_editarAtracao);
-            this.groupBox6.Controls.Add(this.textBox1_addAtracao);
-            this.groupBox6.Controls.Add(this.txt_HorarioAtracao);
-            this.groupBox6.Controls.Add(this.btn_adicionarAtracao);
-            this.groupBox6.Controls.Add(this.comboBox3_chosseAtracao);
-            this.groupBox6.Controls.Add(this.textBox2_descricaoAtracao);
-            this.groupBox6.Controls.Add(this.textBox3);
+            this.groupBox6.Controls.Add(this.txtbox_InserirHorario);
+            this.groupBox6.Controls.Add(this.txtBox_inseriPreçoAtracao);
+            this.groupBox6.Controls.Add(this.txtBox_addAtracao);
+            this.groupBox6.Controls.Add(this.btn_AddAtracao);
+            this.groupBox6.Controls.Add(this.txtBox_descricaoAtracao);
             this.groupBox6.Location = new System.Drawing.Point(6, 38);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(756, 89);
@@ -514,114 +504,61 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Nome";
             // 
-            // textBox1_inseriPreçoAtracao
+            // txtbox_InserirHorario
             // 
-            this.textBox1_inseriPreçoAtracao.Location = new System.Drawing.Point(503, 25);
-            this.textBox1_inseriPreçoAtracao.Name = "textBox1_inseriPreçoAtracao";
-            this.textBox1_inseriPreçoAtracao.Size = new System.Drawing.Size(108, 22);
-            this.textBox1_inseriPreçoAtracao.TabIndex = 15;
+            this.txtbox_InserirHorario.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbox_InserirHorario.Location = new System.Drawing.Point(620, 24);
+            this.txtbox_InserirHorario.Name = "txtbox_InserirHorario";
+            this.txtbox_InserirHorario.Size = new System.Drawing.Size(130, 24);
+            this.txtbox_InserirHorario.TabIndex = 16;
+            this.txtbox_InserirHorario.Text = " ";
             // 
-            // comboBox1_precoatracao
+            // txtBox_inseriPreçoAtracao
             // 
-            this.comboBox1_precoatracao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1_precoatracao.FormattingEnabled = true;
-            this.comboBox1_precoatracao.Items.AddRange(new object[] {
-            "Ingresso",
-            "Taxa 10% Cover",
-            "Grátis"});
-            this.comboBox1_precoatracao.Location = new System.Drawing.Point(503, 23);
-            this.comboBox1_precoatracao.Name = "comboBox1_precoatracao";
-            this.comboBox1_precoatracao.Size = new System.Drawing.Size(108, 24);
-            this.comboBox1_precoatracao.TabIndex = 14;
+            this.txtBox_inseriPreçoAtracao.Font = new System.Drawing.Font("Arial", 11.22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_inseriPreçoAtracao.Location = new System.Drawing.Point(503, 24);
+            this.txtBox_inseriPreçoAtracao.Name = "txtBox_inseriPreçoAtracao";
+            this.txtBox_inseriPreçoAtracao.Size = new System.Drawing.Size(108, 25);
+            this.txtBox_inseriPreçoAtracao.TabIndex = 15;
             // 
-            // btn_excluirAtracao
+            // txtBox_addAtracao
             // 
-            this.btn_excluirAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_excluirAtracao.Location = new System.Drawing.Point(648, 57);
-            this.btn_excluirAtracao.Name = "btn_excluirAtracao";
-            this.btn_excluirAtracao.Size = new System.Drawing.Size(108, 32);
-            this.btn_excluirAtracao.TabIndex = 13;
-            this.btn_excluirAtracao.Text = "EXCLUIR";
-            this.btn_excluirAtracao.UseVisualStyleBackColor = true;
-            this.btn_excluirAtracao.Click += new System.EventHandler(this.btn_excluirAtracao_Click);
-            // 
-            // btn_editarAtracao
-            // 
-            this.btn_editarAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_editarAtracao.Location = new System.Drawing.Point(651, 57);
-            this.btn_editarAtracao.Name = "btn_editarAtracao";
-            this.btn_editarAtracao.Size = new System.Drawing.Size(108, 32);
-            this.btn_editarAtracao.TabIndex = 12;
-            this.btn_editarAtracao.Text = "EDITAR";
-            this.btn_editarAtracao.UseVisualStyleBackColor = true;
-            this.btn_editarAtracao.Click += new System.EventHandler(this.btn_editarAtracao_Click);
-            // 
-            // textBox1_addAtracao
-            // 
-            this.textBox1_addAtracao.AutoCompleteCustomSource.AddRange(new string[] {
+            this.txtBox_addAtracao.AutoCompleteCustomSource.AddRange(new string[] {
             "Musical",
             "Comédia/Stand Up",
             "Teatral"});
-            this.textBox1_addAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1_addAtracao.Location = new System.Drawing.Point(6, 21);
-            this.textBox1_addAtracao.Name = "textBox1_addAtracao";
-            this.textBox1_addAtracao.Size = new System.Drawing.Size(188, 25);
-            this.textBox1_addAtracao.TabIndex = 1;
-            this.textBox1_addAtracao.Visible = false;
+            this.txtBox_addAtracao.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_addAtracao.Location = new System.Drawing.Point(6, 24);
+            this.txtBox_addAtracao.Name = "txtBox_addAtracao";
+            this.txtBox_addAtracao.Size = new System.Drawing.Size(188, 24);
+            this.txtBox_addAtracao.TabIndex = 1;
+            this.txtBox_addAtracao.TextChanged += new System.EventHandler(this.textBox1_addAtracao_TextChanged);
             // 
-            // txt_HorarioAtracao
+            // btn_AddAtracao
             // 
-            this.txt_HorarioAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_HorarioAtracao.Location = new System.Drawing.Point(620, 23);
-            this.txt_HorarioAtracao.Name = "txt_HorarioAtracao";
-            this.txt_HorarioAtracao.Size = new System.Drawing.Size(136, 25);
-            this.txt_HorarioAtracao.TabIndex = 11;
+            this.btn_AddAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_AddAtracao.Location = new System.Drawing.Point(648, 52);
+            this.btn_AddAtracao.Name = "btn_AddAtracao";
+            this.btn_AddAtracao.Size = new System.Drawing.Size(108, 31);
+            this.btn_AddAtracao.TabIndex = 9;
+            this.btn_AddAtracao.Text = "ADICIONAR";
+            this.btn_AddAtracao.UseVisualStyleBackColor = true;
+            this.btn_AddAtracao.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btn_adicionarAtracao
+            // txtBox_descricaoAtracao
             // 
-            this.btn_adicionarAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_adicionarAtracao.Location = new System.Drawing.Point(648, 57);
-            this.btn_adicionarAtracao.Name = "btn_adicionarAtracao";
-            this.btn_adicionarAtracao.Size = new System.Drawing.Size(108, 32);
-            this.btn_adicionarAtracao.TabIndex = 9;
-            this.btn_adicionarAtracao.Text = "ADICIONAR";
-            this.btn_adicionarAtracao.UseVisualStyleBackColor = true;
-            this.btn_adicionarAtracao.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // comboBox3_chosseAtracao
-            // 
-            this.comboBox3_chosseAtracao.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3_chosseAtracao.FormattingEnabled = true;
-            this.comboBox3_chosseAtracao.Items.AddRange(new object[] {
-            "Musical",
-            "Comédia",
-            "Teatral"});
-            this.comboBox3_chosseAtracao.Location = new System.Drawing.Point(6, 22);
-            this.comboBox3_chosseAtracao.Name = "comboBox3_chosseAtracao";
-            this.comboBox3_chosseAtracao.Size = new System.Drawing.Size(188, 24);
-            this.comboBox3_chosseAtracao.TabIndex = 0;
-            // 
-            // textBox2_descricaoAtracao
-            // 
-            this.textBox2_descricaoAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2_descricaoAtracao.Location = new System.Drawing.Point(209, 23);
-            this.textBox2_descricaoAtracao.Name = "textBox2_descricaoAtracao";
-            this.textBox2_descricaoAtracao.Size = new System.Drawing.Size(285, 25);
-            this.textBox2_descricaoAtracao.TabIndex = 6;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(503, 23);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(108, 25);
-            this.textBox3.TabIndex = 8;
+            this.txtBox_descricaoAtracao.Font = new System.Drawing.Font("Arial", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_descricaoAtracao.Location = new System.Drawing.Point(209, 24);
+            this.txtBox_descricaoAtracao.Name = "txtBox_descricaoAtracao";
+            this.txtBox_descricaoAtracao.Size = new System.Drawing.Size(285, 24);
+            this.txtBox_descricaoAtracao.TabIndex = 6;
             // 
             // cmbBox_OpcaoAtracao
             // 
             this.cmbBox_OpcaoAtracao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBox_OpcaoAtracao.FormattingEnabled = true;
             this.cmbBox_OpcaoAtracao.Items.AddRange(new object[] {
+            "",
             "ADICIONAR ATRAÇÕES",
             "EDITAR ATRAÇÕES",
             "EXCLUIR ATRAÇÕES"});
@@ -630,6 +567,7 @@
             this.cmbBox_OpcaoAtracao.Size = new System.Drawing.Size(212, 26);
             this.cmbBox_OpcaoAtracao.TabIndex = 3;
             this.cmbBox_OpcaoAtracao.Text = "ADICIONAR ATRAÇÕES";
+            this.cmbBox_OpcaoAtracao.SelectedIndexChanged += new System.EventHandler(this.cmbBox_OpcaoAtracao_SelectedIndexChanged);
             // 
             // tbpEstoque
             // 
@@ -1881,21 +1819,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Horário;
-        private System.Windows.Forms.TextBox txt_HorarioAtracao;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Button btn_adicionarAtracao;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button btn_AddAtracao;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox2_descricaoAtracao;
+        private System.Windows.Forms.TextBox txtBox_descricaoAtracao;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox comboBox3_chosseAtracao;
         private System.Windows.Forms.ComboBox cmbBox_OpcaoAtracao;
-        private System.Windows.Forms.TextBox textBox1_addAtracao;
-        private System.Windows.Forms.ComboBox comboBox1_precoatracao;
-        private System.Windows.Forms.Button btn_excluirAtracao;
-        private System.Windows.Forms.Button btn_editarAtracao;
-        private System.Windows.Forms.TextBox textBox1_inseriPreçoAtracao;
+        private System.Windows.Forms.TextBox txtBox_inseriPreçoAtracao;
+        private System.Windows.Forms.TextBox txtBox_addAtracao;
+        private System.Windows.Forms.TextBox txtbox_InserirHorario;
     }
 }
 
